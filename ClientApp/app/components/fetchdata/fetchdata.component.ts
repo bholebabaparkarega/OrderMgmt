@@ -14,7 +14,7 @@ export class FetchProductComponent implements OnInit {
     constructor(private _router:Router, private _service: ProductService) {           
     }
 
-    ngOnInit()
+    ngOnInit():void
     {
         this._service.getAll().subscribe((data: Product[]) => this.products = data,error=>this.errorMessage=<any>error);
     }

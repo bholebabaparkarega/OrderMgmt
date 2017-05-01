@@ -24,7 +24,6 @@ import {ProductService } from './services/product.service'
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchProductComponent },
-            { path: '**', redirectTo: 'home' }
         ])
     ],
     providers:
