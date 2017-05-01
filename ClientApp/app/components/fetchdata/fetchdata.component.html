@@ -1,0 +1,24 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.{{errorMessage}}</p>
+
+<p *ngIf="!products"><em>Loading...</em></p>
+
+<table class='table' *ngIf="products">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Product code</th>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{ product.productId }}</td>
+            <td>{{ product.productCode }}</td>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.unitPrice }}</td>
+        </tr>
+    </tbody>
+</table>
